@@ -1,5 +1,5 @@
 import './index.scss';
-import {Input, Row, Spacer, Text} from "@nextui-org/react";
+import {Input, Row, Spacer} from "@nextui-org/react";
 import {useContext} from 'react';
 import {DataContext} from '../../data/DataProvider';
 

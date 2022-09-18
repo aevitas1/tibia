@@ -1,5 +1,5 @@
 import './index.scss';
-import {Input, Container, Text, Row, Spacer} from "@nextui-org/react";
+import {Input, Container, Row, Spacer} from "@nextui-org/react";
 import {useState} from 'react';
 
 const LevelShare = () => {
