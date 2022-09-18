@@ -30,7 +30,8 @@ const Runes = () => {
                             <Table.Cell>{(Math.floor((Number(level) * 0.2) + (Number(rune.xMax) * Number(magiclvl)) + (Number(rune.yMax))))}</Table.Cell>
                             <Table.Cell>{Math.ceil((((Number(level) * 0.2) + (Number(rune.xMin) * Number(magiclvl)) + (Number(rune.yMin))) + ((Number(level) * 0.2) + (Number(rune.xMax) * Number(magiclvl)) + (Number(rune.yMax)))) / 2)}</Table.Cell>
                             <Table.Cell>{rune.price}</Table.Cell>
-                            <Table.Cell>{Math.floor(((((Number(level) * 0.2) + (Number(rune.xMin) * Number(magiclvl)) + (Number(rune.yMin))) + ((Number(level) * 0.2) + (Number(rune.xMax) * Number(magiclvl)) + (Number(rune.yMax)))) / 2) / Number(rune.price))}</Table.Cell>
+                            <Table.Cell>{((((Number(level) * 0.2) + (Number(rune.xMin) * Number(magiclvl)) + (Number(rune.yMin))) + ((Number(level) * 0.2) + (Number(rune.xMax) * Number(magiclvl)) + (Number(rune.yMax)))) / 2 / Number(rune.price)).toFixed(1)} :
+                                1</Table.Cell>
                         </Table.Row>
                     ))}
                 </Table.Body>
@@ -54,7 +55,8 @@ const Runes = () => {
                             <Table.Cell>{(Math.floor((Number(level) * 0.2) + (Number(rune.xMax) * Number(magiclvl)) + (Number(rune.yMax))))}</Table.Cell>
                             <Table.Cell>{Math.ceil((((Number(level) * 0.2) + (Number(rune.xMin) * Number(magiclvl)) + (Number(rune.yMin))) + ((Number(level) * 0.2) + (Number(rune.xMax) * Number(magiclvl)) + (Number(rune.yMax)))) / 2)}</Table.Cell>
                             <Table.Cell>{rune.price}</Table.Cell>
-                            <Table.Cell>{Math.floor(((((Number(level) * 0.2) + (Number(rune.xMin) * Number(magiclvl)) + (Number(rune.yMin))) + ((Number(level) * 0.2) + (Number(rune.xMax) * Number(magiclvl)) + (Number(rune.yMax)))) / 2) / Number(rune.price))}</Table.Cell>
+                            <Table.Cell>{((((Number(level) * 0.2) + (Number(rune.xMin) * Number(magiclvl)) + (Number(rune.yMin))) + ((Number(level) * 0.2) + (Number(rune.xMax) * Number(magiclvl)) + (Number(rune.yMax)))) / 2 / Number(rune.price)).toFixed(1)} :
+                                1</Table.Cell>
                         </Table.Row>
                     ))}
                 </Table.Body>

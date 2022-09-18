@@ -1,5 +1,5 @@
 import './index.scss';
-import { Spacer, Container, Text } from "@nextui-org/react";
+import {Spacer, Container, Text} from "@nextui-org/react";
 
 const Footer = () => {
     let d = new Date();
@@ -10,7 +10,7 @@ const Footer = () => {
             <Spacer y={1}/>
             <Container fluid>
                 <Container display="flex" justify="center">
-                <Text>&copy; Stephan van der Meijden {currentYear}</Text>
+                    <Text>&copy; Stephan van der Meijden {currentYear}</Text>
                 </Container>
             </Container>
         </>

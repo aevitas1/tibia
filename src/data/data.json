@@ -195,7 +195,7 @@
         {
           "name": "Berserk",
           "mana": "115",
-          "xMax": "0.5",
+          "xMax": "0.05",
           "yMax": "11",
           "xMin": "0.03",
           "yMin": "7",
@@ -225,7 +225,7 @@
         {
           "name": "Front Sweep",
           "mana": "200",
-          "xMax": "0.8",
+          "xMax": "0.08",
           "yMax": "45",
           "xMin": "0.04",
           "yMin": "31",
@@ -245,7 +245,7 @@
         {
           "name": "Whirlwind Throw",
           "mana": "40",
-          "xMax": "0.3",
+          "xMax": "0.03",
           "yMax": "6",
           "xMin": "0.01",
           "yMin": "1",
@@ -329,7 +329,7 @@
           "mana": "110",
           "xMax": "6",
           "yMax": "37",
-          "xMin": "3,6",
+          "xMin": "3.6",
           "yMin": "22"
         },
         {

@@ -9,6 +9,7 @@ export const DataProvider = (props) => {
     const [level, setLevel] = useState('');
     const [magiclvl, setMagiclvl] = useState('');
     const [skill, setSkill] = useState('');
+    const [attack, setAttack] = useState('');
 
     useEffect(() => {
         if (json) {
@@ -28,7 +29,9 @@ export const DataProvider = (props) => {
                 magiclvl,
                 setMagiclvl,
                 skill,
-                setSkill
+                setSkill,
+                attack,
+                setAttack
             }}
         >
             {props.children}

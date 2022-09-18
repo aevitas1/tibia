@@ -4,7 +4,7 @@ import {useContext} from 'react';
 import {DataContext} from '../../data/DataProvider';
 
 const CharStats = () => {
-    const {checked, setLevel, setMagiclvl, setSkill} = useContext(DataContext);
+    const {checked, setLevel, setMagiclvl, setSkill, setAttack} = useContext(DataContext);
 
     return (
         <>
@@ -24,6 +24,11 @@ const CharStats = () => {
                         <Input type="text" pattern="[0-9]*" clearable underlined placeholder="Skill" width="120px"
                                onChange={(e) => {
                                    setSkill(e.target.value)
+                               }}/>
+                        <Spacer x={1}/>
+                        <Input type="text" pattern="[0-9]*" clearable underlined placeholder="Attack" width="120px"
+                               onChange={(e) => {
+                                   setAttack(e.target.value)
                                }}/>
                     </>
                 ) : ''}

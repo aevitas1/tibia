@@ -6,9 +6,10 @@ import RadioButtons from "../RadioButtons";
 import CharStats from "../CharStats";
 import Runes from "../Runes";
 import VocationSpells from '../VocationSpells';
+import CapitalizeFirstLetter from "../Helpers/CapitalizeFirstLetter";
 
 const DamageCalc = () => {
-    const {data} = useContext(DataContext);
+    const {data, checked, level, magiclvl, skill} = useContext(DataContext);
 
 
     return data.length === 0 ? ('') : (
@@ -22,16 +23,25 @@ const DamageCalc = () => {
                 </Row>
                 {/*Insert character stats*/}
                 <CharStats/>
-                <Collapse.Group>
-                    {/*Runes*/}
-                    <Collapse title="Runes">
-                        <Runes/>
-                    </Collapse>
-                    {/*Voc spells*/}
-                    <Collapse title="Vocation Spells">
-                        <VocationSpells/>
-                    </Collapse>
-                </Collapse.Group>
+                {checked === 'paladin' && level > 0 && magiclvl > 0 && skill > 0 || checked === 'knight' && level > 0 && magiclvl > 0 && skill > 0 || checked === 'sorcerer' && level > 0 && magiclvl > 0 || checked === 'druid' && level > 0 && magiclvl > 0 ?
+                    <>
+                        <Spacer y={1}/>
+                        <Text h4 css={{textAlign: "center"}}>These values are without powerful crit / forge upgrades for
+                            now.</Text>
+                        <Spacer y={1}/>
+                        <Collapse.Group>
+                            {/*Runes*/}
+                            <Collapse title="Runes">
+                                <Runes/>
+                            </Collapse>
+                            {/*Voc spells*/}
+                            <Collapse title={CapitalizeFirstLetter(checked)}>
+                                <VocationSpells/>
+                            </Collapse>
+                        </Collapse.Group>
+                    </>
+                    : ''
+                }
             </Container>
         </>
     )
