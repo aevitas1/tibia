@@ -9,7 +9,7 @@ import VocationSpells from '../VocationSpells';
 import CapitalizeFirstLetter from "../Helpers/CapitalizeFirstLetter";
 
 const DamageCalc = () => {
-    const {data, checked, level, magiclvl, skill} = useContext(DataContext);
+    const {data, checked, level, magiclvl, skill, attack} = useContext(DataContext);
 
 
     return data.length === 0 ? ('') : (
@@ -23,7 +23,7 @@ const DamageCalc = () => {
                 </Row>
                 {/*Insert character stats*/}
                 <CharStats/>
-                {checked === 'paladin' && level > 0 && magiclvl > 0 && skill > 0 || checked === 'knight' && level > 0 && magiclvl > 0 && skill > 0 || checked === 'sorcerer' && level > 0 && magiclvl > 0 || checked === 'druid' && level > 0 && magiclvl > 0 ?
+                {(checked === 'paladin' && level > 0 && magiclvl > 0 && skill > 0 && attack > 0) || (checked === 'knight' && level > 0 && magiclvl > 0 && skill > 0 && attack > 0) || (checked === 'sorcerer' && level > 0 && magiclvl > 0) || (checked === 'druid' && level > 0 && magiclvl > 0) ?
                     <>
                         <Spacer y={1}/>
                         <Text h4 css={{textAlign: "center"}}>These values are without powerful crit / forge upgrades for
