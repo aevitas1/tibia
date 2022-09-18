@@ -87,7 +87,8 @@ const VocationSpells = () => {
                                     +
                                     Math.round(dmgCalc(level, spell.xMax, skill, attack, spell.yMax) * spell.balance)
                                 ) / 2)}</Table.Cell>
-                                <Table.Cell>{(((((Number(level) * 0.2) + (Number(spell.xMin) * Number(skill)) + (Number(spell.yMin))) + ((Number(level) * 0.2) + (Number(spell.xMax) * Number(skill)) + (Number(spell.yMax)))) / 2) / Number(spell.mana)).toFixed(2)} :
+                                <Table.Cell>{
+                                    (Math.ceil(Math.round((dmgCalc(level, spell.xMin, skill, attack, spell.yMin) * spell.balance) + (dmgCalc(level, spell.xMax, skill, attack, spell.yMax) * spell.balance)) / 2) / Number(spell.mana)).toFixed(1)} :
                                     1</Table.Cell>
                             </Table.Row>
                         ))}

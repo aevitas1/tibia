@@ -35,7 +35,7 @@ const DamageCalc = () => {
                                 <Runes/>
                             </Collapse>
                             {/*Voc spells*/}
-                            <Collapse title={CapitalizeFirstLetter(checked)}>
+                            <Collapse title={CapitalizeFirstLetter(checked) + ' spells'}>
                                 <VocationSpells/>
                             </Collapse>
                         </Collapse.Group>
