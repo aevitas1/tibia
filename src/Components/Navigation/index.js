@@ -1,12 +1,11 @@
 import './index.scss';
-import { useTheme as useNextTheme } from 'next-themes'
-import { Navbar, Text, Spacer,Switch, useTheme, Image } from "@nextui-org/react";
-import {BsSun, BsMoon } from 'react-icons/bs';
-import Logo from '../../assets/logo.png';
+import {useTheme as useNextTheme} from 'next-themes'
+import {Navbar, Text, Spacer, Switch, useTheme} from "@nextui-org/react";
+import {BsSun, BsMoon} from 'react-icons/bs';
 
 const Navigation = () => {
     const {setTheme} = useNextTheme();
-    const { isDark, type } = useTheme();
+    const {isDark} = useTheme();
 
     return (
         <>
@@ -28,7 +27,7 @@ const Navigation = () => {
 
                 </Navbar.Content>
             </Navbar>
-            <Spacer y={2.5} />
+            <Spacer y={2.5}/>
         </>
     )
 }
