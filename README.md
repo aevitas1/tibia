@@ -1,7 +1,5 @@
 # Tibia Damage Calculator
 
-### Only PALADIN vocation spells work!
-
 ### Missing spells values:
 
 Runes:
