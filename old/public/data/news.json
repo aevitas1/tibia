@@ -1,0 +1,11 @@
+{
+  "news": [
+    {
+      "id": "1",
+      "date": "01-04-2023",
+      "title": "News items!",
+      "category": "New Feature",
+      "content": "News feature has been added to keep you up-to-date on the most recent website tweaks and changes."
+    }
+  ]
+}
