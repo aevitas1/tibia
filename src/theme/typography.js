@@ -1,4 +1,3 @@
-const logoFont = "'Satisfy', cursive"
 const typography = {
     fontFamily: 'Poppins',
     fontSize: 16,

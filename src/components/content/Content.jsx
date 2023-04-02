@@ -1,11 +1,7 @@
-import AddChar from "./characters/AddChar";
+// import AddChar from "./characters/AddCharacter/AddChar";
 
 const Content = () => {
-  return (
-    <>
-      <AddChar />
-    </>
-  );
+  return <></>;
 };
 
 export default Content;

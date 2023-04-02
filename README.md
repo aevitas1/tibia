@@ -20,5 +20,8 @@ Spells:
 - Exp required to level (e.g. 1 to 100, 100 to 101)
 - Party Share Range
 - Character stats (hp, mana, capacity)
+- Training calculator
+- Featherweight calculator (amount of loot required per hour to make up for imbuement cost)
+- Imbuement cost calculator
 
 #### Version 0.2.5

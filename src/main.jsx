@@ -17,13 +17,11 @@ import "@fontsource/poppins/900.css";
 const queryClient = new QueryClient();
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <AppProvider>
-      <Router>
-        <QueryClientProvider client={queryClient}>
-          <App />
-        </QueryClientProvider>
-      </Router>
-    </AppProvider>
-  </React.StrictMode>
+  <AppProvider>
+    <Router>
+      <QueryClientProvider client={queryClient}>
+        <App />
+      </QueryClientProvider>
+    </Router>
+  </AppProvider>
 );
