@@ -2,7 +2,7 @@
 export const SelectMenuStyles = {
     sx: {
         "& .MuiMenu-paper": {
-            backgroundColor: "transparent",
+            backgroundColor: "rgb(30, 30, 30)",
             color: "text.light",
         },
         "& .MuiMenuItem-root:hover": {
