@@ -14,9 +14,13 @@ const CharacterStatsCalculator = () => {
     vocation: "knight",
   };
 
+  const StatsTypography = {
+    fontSize: "1rem",
+    fontWeight: "300",
+  };
+
   const [characterStats, setCharacterStats] = useState(DefaultCharacterStats);
   const handleChange = (e) => {
-    console.log(characterStats);
     if (e.target.name === "vocation") {
       setCharacterStats((prevState) => ({
         ...prevState,
@@ -29,10 +33,9 @@ const CharacterStatsCalculator = () => {
         level: e.target.value,
       }));
     }
-    calculateStats();
   };
 
-  const calculateStats = () => {
+  useEffect(() => {
     let charCalc = characterStats.level - 8;
     if (characterStats.level <= 8) {
       setCharacterStats((prevState) => ({
@@ -90,9 +93,8 @@ const CharacterStatsCalculator = () => {
         }));
       }
     }
-  };
+  }, [characterStats]);
 
-  useEffect(() => {}, [characterStats.level]);
   return (
     <Grid2
       sx={{
@@ -101,6 +103,7 @@ const CharacterStatsCalculator = () => {
         flexDirection: "column",
       }}
     >
+      <Typography variant="h2">Character stats</Typography>
       <Grid2
         sx={{
           marginBottom: "2.5rem",
@@ -109,16 +112,19 @@ const CharacterStatsCalculator = () => {
           alignItems: "center",
           flexDirection: "column",
           gap: "1rem",
+          paddingTop: "1.5rem",
         }}
       >
         <Grid2
           sx={{
             display: "flex",
             alignItems: "center",
-            justifyContent: "space-between",
+            width: "15rem",
           }}
         >
-          <Typography variant="p">Vocation: </Typography>
+          <Typography variant="p" sx={{ paddingRight: "1rem" }}>
+            Vocation:{" "}
+          </Typography>
           <Select
             displayEmpty
             value={characterStats.vocation}
@@ -139,17 +145,19 @@ const CharacterStatsCalculator = () => {
           sx={{
             display: "flex",
             alignItems: "center",
-            justifyContent: "space-between",
+            width: "15rem",
           }}
         >
-          <Typography variant="p">Level: </Typography>
+          <Typography variant="p" sx={{ paddingRight: "1rem" }}>
+            Level:{" "}
+          </Typography>
           <TextField
             type="number"
             value={characterStats.level}
             name="level"
             onChange={handleChange}
             sx={{
-              width: "120px",
+              width: "100%",
               ".MuiInputBase-input": {
                 padding: "0.25rem",
               },
@@ -165,13 +173,35 @@ const CharacterStatsCalculator = () => {
           height: "120px",
           backgroundRepeat: "no-repeat",
         }}
-      ></Grid2>
-      <Typography variant="p">Voc: {characterStats.vocation}</Typography>
-      <Typography variant="p">Level: {characterStats.level}</Typography>
-      <Typography variant="p">Hp: {characterStats.hp}</Typography>
-      <Typography variant="p">Mana: {characterStats.mana}</Typography>
-      <Typography variant="p">Cap: {characterStats.cap}</Typography>
-      <Typography variant="p">Speed: {characterStats.speed}</Typography>
+      >
+        <Grid2
+          sx={{
+            width: "100%",
+            display: "flex",
+            justifyContent: "space-between",
+            paddingTop: "1.5rem",
+            paddingLeft: "1.75rem",
+            paddingRight: "5.5rem",
+          }}
+        >
+          <Typography sx={StatsTypography}>{characterStats.speed}</Typography>
+          <Typography sx={StatsTypography}>{characterStats.cap}</Typography>
+        </Grid2>
+        <Grid2
+          sx={{
+            width: "100%",
+            display: "flex",
+            alignItems: "flex-end",
+            flexDirection: "column",
+            paddingRight: "2.25rem",
+            paddingTop: "0.75rem",
+            gap: "0.25rem",
+          }}
+        >
+          <Typography sx={StatsTypography}>{characterStats.hp}</Typography>
+          <Typography sx={StatsTypography}>{characterStats.mana}</Typography>
+        </Grid2>
+      </Grid2>
     </Grid2>
   );
 };
