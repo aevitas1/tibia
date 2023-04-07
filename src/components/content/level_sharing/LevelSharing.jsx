@@ -16,7 +16,7 @@ const LevelSharing = () => {
       setLevel(1);
     } else {
       setMin(parseInt(Math.floor((level * 2) / 3)));
-      setMax(parseInt(Math.ceil((level * 3) / 2)));
+      setMax(parseInt(Math.ceil((level * 3) / 2)) + 1);
     }
   }, [level]);
 
