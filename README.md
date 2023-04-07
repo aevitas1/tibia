@@ -4,11 +4,11 @@
 
 All values have to be looked at as tons of changes were made since the last version of the app.
 
-Runes:
+#### Runes:
 
 - Intense healing rune
 
-Spells:
+#### Spells:
 
 - Nature's Embrace
 - Restoration
