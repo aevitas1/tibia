@@ -2,6 +2,8 @@
 
 ### Missing spells values:
 
+All values have to be looked at as tons of changes were made since the last version of the app.
+
 Runes:
 
 - Intense healing rune
@@ -15,13 +17,10 @@ Spells:
 
 #### Todo:
 
-- Add blessing cost calculator
-- Death penalty calculator (with 1,2,3,4,5,6,7 blessings, without)
 - Exp required to level (e.g. 1 to 100, 100 to 101)
-- Party Share Range
-- Character stats (hp, mana, capacity)
 - Training calculator
 - Featherweight calculator (amount of loot required per hour to make up for imbuement cost)
 - Imbuement cost calculator
+- Wheel of Destiny implementation
 
 #### Version 1
