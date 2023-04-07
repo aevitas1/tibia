@@ -1,4 +1,4 @@
-import { useState, useEffect, useContext } from "react";
+import { useState, useEffect } from "react";
 import {
   Box,
   Button,
@@ -9,16 +9,8 @@ import {
 } from "@mui/material";
 import { SelectMenuStyles, SelectStyles } from "../../../theme/SelectStyle";
 import { validateInput, validateVocations } from "../../../helpers/validate";
-import AppContext from "../../../context/AppContext";
 
 const CharacterForm = () => {
-  const {
-    characterSuccess,
-    characterError,
-    setCharacterSuccess,
-    setCharacterError,
-  } = useContext(AppContext);
-
   const initialCharacterState = {
     characterName: "",
     characterLevel: "",
@@ -38,11 +30,10 @@ const CharacterForm = () => {
   const [newChar, setNewChar] = useState(initialCharacterState);
   const [errors, setErrors] = useState(initialErrorState);
 
-  useEffect(() => {}, [newChar, errors, characterSuccess, characterError]);
+  useEffect(() => {}, [newChar, errors]);
+
   const ErrorCheck = () => {
     setErrors(initialErrorState);
-    characterError && setCharacterError((prevState) => !prevState);
-    characterSuccess && setCharacterSuccess((prevState) => !prevState);
     setErrors({
       vocationError: validateInput("letters", newChar.characterVocation),
       nameError: validateInput("letters", newChar.characterName),
@@ -66,8 +57,6 @@ const CharacterForm = () => {
         errors.attackError
       )
     ) {
-      setCharacterError((prevState) => !prevState);
-      console.log("err", characterError);
       return;
     } else {
       if (localStorage.getItem("character")) {
@@ -78,8 +67,6 @@ const CharacterForm = () => {
       } else {
         localStorage.setItem("character", JSON.stringify(newChar));
       }
-      setCharacterSuccess((prevState) => !prevState);
-      console.log("succ", characterSuccess);
     }
   };
 
@@ -232,10 +219,6 @@ const CharacterForm = () => {
         required
       />
       {/* Submit button  */}
-      <Typography>
-        {characterError && "error"}
-        {characterSuccess && "Success"}
-      </Typography>
       <Button variant="contained" onClick={ErrorCheck}>
         Add character
       </Button>

@@ -9,6 +9,42 @@ export const calcExperience = (level) => {
     return currentLevelExp;
 }
 
+export const calcExperienceLoss = (level, blessing, promoted) => {
+    let expLoss;
+    let expCalc;
+    let percent;
+    let blessingPercent = blessing * 0.08;
+
+    if (level <= 23) {
+        percent = 0.1;
+        if (promoted) {
+            percent = parseFloat(percent) - 0.03;
+        }
+        blessingPercent = blessing * 0.01;
+        if (blessing >= 5) {
+            blessingPercent = 0.05;
+        }
+        percent = parseFloat(percent) - blessingPercent;
+        expCalc = (50 * ((parseFloat(level) - 1) * (parseFloat(level) - 1) * (parseFloat(level) - 1)) - 150 * ((parseFloat(level) - 1) * (parseFloat(level) - 1)) + (400 * (parseFloat(level) - 1))) / 3;
+        expLoss = expCalc * percent;
+    }
+    if (level > 23) {
+        percent = 0;
+        let expCalc = (50 * ((level) * (level) - 5 * (level) + 8)) * ((parseFloat(level) + 49) / 100);
+        if (promoted) {
+            percent = parseFloat(percent) + 0.3;
+        }
+        percent = parseFloat(percent) + blessingPercent;
+        percent = 1 - parseFloat(percent);
+        console.log(percent)
+        expLoss = expCalc * percent;
+    }
+    if (level <= 0) {
+        expLoss = 0;
+    }
+    return expLoss;
+}
+
 export const calcBlessings = (level, blessing, type) => {
     let price = 0;
     let base = 2000;

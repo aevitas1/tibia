@@ -3,8 +3,10 @@ import Home from "../pages/Home";
 import ErrorPage from "../pages/ErrorPage";
 import AddCharacter from "./characters/AddCharacter";
 import CharacterStatsCalculator from "./character_stats_calculator/CharacterStatsCalculator";
-import BlessingCalculator from "./blessing_calculator/BlessingCalculator";
+import Blessings from "./blessing_calculator/Blessings";
 import LevelSharing from "./level_sharing/LevelSharing";
+import ImbuementCalculator from "./imbuement_calculator/ImbuementCalculator";
+
 const Content = () => {
   return (
     <>
@@ -16,12 +18,13 @@ const Content = () => {
           path="character-stats-calculator"
           element={<CharacterStatsCalculator />}
         />
+        <Route index path="blessing-calculator" element={<Blessings />} />
+        <Route index path="level-sharing" element={<LevelSharing />} />
         <Route
           index
-          path="blessing-calculator"
-          element={<BlessingCalculator />}
+          path="imbuement-calculator"
+          element={<ImbuementCalculator />}
         />
-        <Route index path="level-sharing" element={<LevelSharing />} />
         <Route path="/*" element={<Home />} />
       </Routes>
     </>

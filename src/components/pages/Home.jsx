@@ -26,6 +26,10 @@ const Home = () => {
       <Button variant="contained" href="/level-sharing">
         Level share calculator
       </Button>
+
+      <Button variant="contained" href="/imbuement-calculator">
+        Imbuement calculator
+      </Button>
     </Grid2>
   );
 };

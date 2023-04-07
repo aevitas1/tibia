@@ -27,6 +27,7 @@ export const validateInput = (value, value1) => {
     return error;
 };
 
+
 // Check if all fields have been filled
 export const validateVocations = (value, value2, value3, value4, value5, value6) => {
     if (value === "druid" || value === "sorcerer") {
