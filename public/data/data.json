@@ -626,47 +626,112 @@
   },
   "imbuements": [
     {
-      "fire damage": [
+      "name": "Scorch",
+      "image": "Basic_Scorch",
+      "amount": 10,
+      "type": "physical converted to fire damage",
+      "materials": [
+        { "name": "Fiery Hearts", "amount": 25, "image": "Fiery_Heart" }
+      ]
+    },
+    {
+      "image": "Intricate_Scorch",
+      "amount": 25,
+      "type": "physical converted to fire damage",
+      "materials": [
+        { "name": "Fiery Hearts", "amount": 25, "image": "Fiery_Heart" },
         {
-          "name": "Basic Scorch",
-          "image": "Basic_Scorch",
-          "amount": 10,
-          "materials": [
-            { "Fiery Hearts": { "amount": 25, "image": "Fiery_Heart" } }
-          ]
-        },
-        {
-          "name": "Intricate Scorch",
-          "image": "Intricate_Scorch",
-          "amount": 25,
-          "materials": [
-            {
-              "Fiery Hearts": { "amount": 25, "image": "Fiery_Heart" },
-              "Green Dragon Scales": {
-                "amount": 5,
-                "image": "Green_Dragon_scale"
-              }
-            }
-          ]
-        },
-        {
-          "name": "Powerful Scorch",
-          "image": "Powerful_Scorch",
-          "amount": 50,
-          "materials": [
-            {
-              "Fiery Hearts": { "amount": 25, "image": "Fiery_Heart" },
-              "Green Dragon Scales": {
-                "amount": 5,
-                "image": "Green_Dragon_scale"
-              },
-              "Demon Horns": {
-                "amount": 5,
-                "image": "Demon_Horn"
-              }
-            }
-          ]
+          "name": "Green Dragon Scales",
+          "amount": 5,
+          "image": "Green_Dragon_Scale"
         }
+      ]
+    },
+    {
+      "image": "Powerful_Scorch",
+      "amount": 50,
+      "type": "physical converted to fire damage",
+      "materials": [
+        { "name": "Fiery Hearts", "amount": 25, "image": "Fiery_Heart" },
+        {
+          "name": "Green Dragon Scales",
+          "amount": 5,
+          "image": "Green_Dragon_Scale"
+        },
+        { "name": "Demon Horns", "amount": 5, "image": "Demon_Horn" }
+      ]
+    },
+    {
+      "name": "Venom",
+      "image": "Basic_Venom",
+      "amount": 10,
+      "type": "poison damage",
+      "materials": [
+        { "name": "Swamp Grass", "amount": 25, "image": "Swamp_Grass" }
+      ]
+    },
+    {
+      "image": "Intricate_Venom",
+      "amount": 25,
+      "type": "poison damage",
+      "materials": [
+        { "name": "Swamp Grass", "amount": 25, "image": "Swamp_Grass" },
+        {
+          "name": "Poisonous Slimes",
+          "amount": 20,
+          "image": "Poisonous_Slime"
+        }
+      ]
+    },
+    {
+      "image": "Powerful_Venom",
+      "amount": 50,
+      "type": "poison damage",
+      "materials": [
+        { "name": "Swamp Grass", "amount": 25, "image": "Swamp_Grass" },
+        {
+          "name": "Poisonous Slimes",
+          "amount": 20,
+          "image": "Poisonous_Slime"
+        },
+        { "name": "Slime Heart", "amount": 2, "image": "Slime_Heart" }
+      ]
+    },
+
+    {
+      "name": "Frost",
+      "image": "Basic_Frost",
+      "amount": 10,
+      "type": "ice damage",
+      "materials": [
+        { "name": "Frosty Hearts", "amount": 25, "image": "Frosty_Heart" }
+      ]
+    },
+    {
+      "image": "Intricate_Frost",
+      "amount": 25,
+      "type": "ice damage",
+      "materials": [
+        { "name": "Frosty Hearts", "amount": 25, "image": "Frosty_Heart" },
+        {
+          "name": "Seacrest Hair",
+          "amount": 10,
+          "image": "Seacrest_Hair"
+        }
+      ]
+    },
+    {
+      "image": "Powerful_Frost",
+      "amount": 50,
+      "type": "ice damage",
+      "materials": [
+        { "name": "Frosty Hearts", "amount": 25, "image": "Frosty_Heart" },
+        {
+          "name": "Seacrest Hair",
+          "amount": 10,
+          "image": "Seacrest_Hair"
+        },
+        { "name": "Polar Bear Paws", "amount": 5, "image": "Polar_Bear_Paw" }
       ]
     }
   ]
