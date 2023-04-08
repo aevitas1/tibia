@@ -17,7 +17,7 @@ const Content = () => {
         This website is a work in progress
       </Typography>
       <Routes>
-        <Route path="*" element={<Home />} errorElement={<ErrorPage />} />
+        <Route path="*" element={<Home />} />
         <Route
           index
           path="/add-character"
@@ -27,22 +27,14 @@ const Content = () => {
         <Route
           index
           path="character-stats-calculator"
-          element={<CharacterStatsCalculator errorElement={<ErrorPage />} />}
+          element={<CharacterStatsCalculator />}
         />
-        <Route
-          index
-          path="blessing-calculator"
-          element={<Blessings errorElement={<ErrorPage />} />}
-        />
-        <Route
-          index
-          path="level-sharing"
-          element={<LevelSharing errorElement={<ErrorPage />} />}
-        />
+        <Route index path="blessing-calculator" element={<Blessings />} />
+        <Route index path="level-sharing" element={<LevelSharing />} />
         <Route
           index
           path="imbuement-calculator"
-          element={<ImbuementCalculator errorElement={<ErrorPage />} />}
+          element={<ImbuementCalculator />}
         />
         <Route path="/*" element={<Home errorElement={<ErrorPage />} />} />
       </Routes>
