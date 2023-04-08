@@ -1,8 +1,16 @@
 import { Button } from "@mui/material";
+import { NavLink } from "react-router-dom";
 
 import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 
 const Home = () => {
+  const tempLinks = [
+    { name: "Character Stats Calculator", path: "/character-stats-calculator" },
+    { name: "Add Character", path: "/add-character" },
+    { name: "Blessing calculator", path: "/blessing-calculator" },
+    { name: "Level share calculator", path: "/level-sharing" },
+    { name: "Imbuement calculator", path: "/imbuement-calculator" },
+  ];
   return (
     <Grid2
       sx={{
@@ -12,24 +20,11 @@ const Home = () => {
         alignItems: "center",
       }}
     >
-      <Button variant="contained" href="/character-stats-calculator">
-        Character Stats Calculator
-      </Button>
-      <Button variant="contained" href="/add-character">
-        Add Character
-      </Button>
-
-      <Button variant="contained" href="/blessing-calculator">
-        Blessing calculator
-      </Button>
-
-      <Button variant="contained" href="/level-sharing">
-        Level share calculator
-      </Button>
-
-      <Button variant="contained" href="/imbuement-calculator">
-        Imbuement calculator
-      </Button>
+      {tempLinks.map((item) => (
+        <NavLink to={item.path}>
+          <Button variant="contained">{item.name}</Button>
+        </NavLink>
+      ))}
     </Grid2>
   );
 };

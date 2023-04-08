@@ -18,20 +18,33 @@ const Content = () => {
       </Typography>
       <Routes>
         <Route path="*" element={<Home />} errorElement={<ErrorPage />} />
-        <Route index path="/add-character" element={<AddCharacter />} />
+        <Route
+          index
+          path="/add-character"
+          element={<AddCharacter />}
+          errorElement={<ErrorPage />}
+        />
         <Route
           index
           path="character-stats-calculator"
-          element={<CharacterStatsCalculator />}
+          element={<CharacterStatsCalculator errorElement={<ErrorPage />} />}
         />
-        <Route index path="blessing-calculator" element={<Blessings />} />
-        <Route index path="level-sharing" element={<LevelSharing />} />
+        <Route
+          index
+          path="blessing-calculator"
+          element={<Blessings errorElement={<ErrorPage />} />}
+        />
+        <Route
+          index
+          path="level-sharing"
+          element={<LevelSharing errorElement={<ErrorPage />} />}
+        />
         <Route
           index
           path="imbuement-calculator"
-          element={<ImbuementCalculator />}
+          element={<ImbuementCalculator errorElement={<ErrorPage />} />}
         />
-        <Route path="/*" element={<Home />} />
+        <Route path="/*" element={<Home errorElement={<ErrorPage />} />} />
       </Routes>
     </>
   );
