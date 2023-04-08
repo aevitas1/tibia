@@ -94,6 +94,7 @@ const ImbuementCost = (select) => {
         >
           <Typography variant="h5">Cost</Typography>
           <CompareCost />
+          {goldValue}
         </Grid2>
       </>
     )

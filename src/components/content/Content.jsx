@@ -6,10 +6,16 @@ import CharacterStatsCalculator from "./character_stats_calculator/CharacterStat
 import Blessings from "./blessing_calculator/Blessings";
 import LevelSharing from "./level_sharing/LevelSharing";
 import ImbuementCalculator from "./imbuement_calculator/ImbuementCalculator";
+import { Typography } from "@mui/material";
 
 const Content = () => {
   return (
     <>
+      <Typography
+        sx={{ textAlign: "center", width: "100%", paddingBottom: "2.5rem" }}
+      >
+        This website is a work in progress
+      </Typography>
       <Routes>
         <Route path="*" element={<Home />} errorElement={<ErrorPage />} />
         <Route index path="/add-character" element={<AddCharacter />} />
