@@ -1,20 +1,15 @@
-import './App.scss';
-import Navigation from './Components/Navigation';
-import Footer from './Components/Footer';
-import Content from "./Components/Content";
-import {Container} from "@nextui-org/react";
-import {DataProvider} from "./data/DataProvider";
+import { CssBaseline } from "@mui/material"
+import { ThemeProvider } from "@mui/material/styles";
+import { Theme } from "./theme/Theme";
+import Layout from "./components/Layout";
 
 function App() {
-    return (
-        <DataProvider>
-            <Container xl>
-                <Navigation/>
-                <Content/>
-                <Footer/>
-            </Container>
-        </DataProvider>
-    );
+  return (
+    <ThemeProvider theme={Theme}>
+      <CssBaseline />
+      <Layout />
+    </ThemeProvider>
+  );
 }
 
 export default App;

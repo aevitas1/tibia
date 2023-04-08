@@ -1,0 +1,738 @@
+{
+  "runes": {
+    "attack": [
+      {
+        "name": "Avalanche Rune",
+        "price": "57",
+        "xMax": "2.85",
+        "yMax": "16",
+        "xMin": "1.2",
+        "yMin": "7"
+      },
+      {
+        "name": "Explosion Rune",
+        "price": "31",
+        "xMax": "3.2",
+        "yMax": "19",
+        "xMin": "1.6",
+        "yMin": "9"
+      },
+      {
+        "name": "Fireball Rune",
+        "price": "30",
+        "xMax": "3",
+        "yMax": "17",
+        "xMin": "1.81",
+        "yMin": "12"
+      },
+      {
+        "name": "Great Fireball Rune",
+        "price": "57",
+        "xMax": "2.85",
+        "yMax": "16",
+        "xMin": "1.2",
+        "yMin": "7"
+      },
+      {
+        "name": "Heavy Magic Missile Rune",
+        "price": "12",
+        "xMax": "1.59",
+        "yMax": "10",
+        "xMin": "0.81",
+        "yMin": "5"
+      },
+      {
+        "name": "Holy Missile Rune",
+        "price": "16",
+        "xMax": "3.8",
+        "yMax": "18",
+        "xMin": "1.9",
+        "yMin": "8"
+      },
+      {
+        "name": "Icicle Rune",
+        "price": "30",
+        "xMax": "3",
+        "yMax": "17",
+        "xMin": "1.81",
+        "yMin": "12"
+      },
+      {
+        "name": "Light Magic Missile Rune",
+        "price": "4",
+        "xMax": "0.81",
+        "yMax": "4",
+        "xMin": "0.4",
+        "yMin": "3"
+      },
+      {
+        "name": "Stone Shower Rune",
+        "price": "37",
+        "xMax": "2.6",
+        "yMax": "16",
+        "xMin": "1",
+        "yMin": "6"
+      },
+      {
+        "name": "Stalagmite Rune",
+        "price": "12",
+        "xMax": "1.59",
+        "yMax": "10",
+        "xMin": "0.81",
+        "yMin": "5"
+      },
+      {
+        "name": "Sudden Death Rune",
+        "price": "135",
+        "xMax": "7.4",
+        "yMax": "48",
+        "xMin": "4.3",
+        "yMin": "32"
+      },
+      {
+        "name": "Thunderstorm Rune",
+        "price": "47",
+        "xMax": "2.6",
+        "yMax": "16",
+        "xMin": "1",
+        "yMin": "6"
+      }
+    ],
+    "healing": [
+      {
+        "name": "Ultimate Healing Rune",
+        "price": "175",
+        "xMax": "12.4",
+        "yMax": "90",
+        "xMin": "7.3",
+        "yMin": "42"
+      }
+    ]
+  },
+  "vocations": {
+    "paladin": {
+      "damage": [
+        {
+          "name": "Divine Caldera",
+          "mana": "160",
+          "xMax": "6.2",
+          "yMax": "45",
+          "xMin": "5",
+          "yMin": "25"
+        },
+        {
+          "name": "Divine Missile",
+          "mana": "20",
+          "xMax": "3",
+          "yMax": "18",
+          "xMin": "1.9",
+          "yMin": "8"
+        },
+        {
+          "name": "Ethereal Spear",
+          "mana": "25",
+          "xMax": "1",
+          "yMax": "5",
+          "xMin": "0.7",
+          "yMin": "0"
+        },
+        {
+          "name": "Strong Ethereal Spear",
+          "mana": "55",
+          "xMax": "1.5",
+          "yMax": "13",
+          "xMin": "1",
+          "yMin": "7"
+        }
+      ],
+      "healing": [
+        {
+          "name": "Divine Healing",
+          "mana": "160",
+          "xMax": "13.2",
+          "yMax": "82",
+          "xMin": "6.9",
+          "yMin": "40"
+        },
+        {
+          "name": "Intense Healing",
+          "mana": "70",
+          "xMax": "6",
+          "yMax": "37",
+          "xMin": "3.6",
+          "yMin": "22"
+        },
+        {
+          "name": "Light Healing",
+          "mana": "20",
+          "xMax": "1.8",
+          "yMax": "11",
+          "xMin": "1.4",
+          "yMin": "8"
+        },
+        {
+          "name": "Salvation",
+          "mana": "210",
+          "xMax": "20",
+          "yMax": "125",
+          "xMin": "12",
+          "yMin": "75"
+        }
+      ]
+    },
+    "knight": {
+      "damage": [
+        {
+          "name": "Annihilation",
+          "mana": "300",
+          "xMax": "0.14",
+          "yMax": "34",
+          "xMin": "0.06",
+          "yMin": "13",
+          "spell": "exori gran ico",
+          "balance": "1.28"
+        },
+        {
+          "name": "Berserk",
+          "mana": "115",
+          "xMax": "0.05",
+          "yMax": "11",
+          "xMin": "0.03",
+          "yMin": "7",
+          "spell": "exori",
+          "balance": "1.1"
+        },
+        {
+          "name": "Brutal Strike",
+          "mana": "30",
+          "xMax": "0.04",
+          "yMax": "9",
+          "xMin": "0.02",
+          "yMin": "4",
+          "spell": "exori ico",
+          "balance": "1.28"
+        },
+        {
+          "name": "Fierce Berserk",
+          "mana": "340",
+          "xMax": "0.11",
+          "yMax": "27",
+          "xMin": "0.06",
+          "yMin": "13",
+          "spell": "exori gran",
+          "balance": "1.1"
+        },
+        {
+          "name": "Front Sweep",
+          "mana": "200",
+          "xMax": "0.08",
+          "yMax": "45",
+          "xMin": "0.04",
+          "yMin": "31",
+          "spell": "exori min",
+          "balance": "1.1"
+        },
+        {
+          "name": "Groundshaker",
+          "mana": "160",
+          "xMax": "0.03",
+          "yMax": "6",
+          "xMin": "0.02",
+          "yMin": "4",
+          "spell": "exori mas",
+          "balance": "1.28"
+        },
+        {
+          "name": "Whirlwind Throw",
+          "mana": "40",
+          "xMax": "0.03",
+          "yMax": "6",
+          "xMin": "0.01",
+          "yMin": "1",
+          "spell": "exori hur",
+          "balance": "1.28"
+        }
+      ],
+      "healing": [
+        {
+          "name": "Fair Wound Cleansing",
+          "mana": "90",
+          "xMax": "21",
+          "yMax": "131",
+          "xMin": "15",
+          "yMin": "93",
+          "spell": "exura med ico"
+        },
+        {
+          "name": "Wound Cleansing",
+          "mana": "40",
+          "xMax": "8",
+          "yMax": "50",
+          "xMin": "4",
+          "yMin": "25",
+          "spell": "exura ico"
+        }
+      ]
+    },
+    "sorcerer": {
+      "damage": [
+        {
+          "name": "Death Strike",
+          "mana": "20",
+          "xMax": "2.203",
+          "yMax": "14",
+          "xMin": "1.403",
+          "yMin": "8"
+        },
+        {
+          "name": "Energy Beam",
+          "mana": "40",
+          "xMax": "3",
+          "yMax": "19",
+          "xMin": "1.8",
+          "yMin": "11"
+        },
+        {
+          "name": "Energy Strike",
+          "mana": "20",
+          "xMax": "2.203",
+          "yMax": "14",
+          "xMin": "1.403",
+          "yMin": "8"
+        },
+        {
+          "name": "Energy Wave",
+          "mana": "170",
+          "xMax": "7.6",
+          "yMax": "48",
+          "xMin": "4.5",
+          "yMin": "20"
+        },
+        {
+          "name": "Fire Wave",
+          "mana": "25",
+          "xMax": "2",
+          "yMax": "12",
+          "xMin": "1.2",
+          "yMin": "7"
+        },
+        {
+          "name": "Flame Strike",
+          "mana": "20",
+          "xMax": "2.203",
+          "yMax": "14",
+          "xMin": "1.403",
+          "yMin": "8"
+        },
+        {
+          "name": "Great Energy Beam",
+          "mana": "110",
+          "xMax": "6",
+          "yMax": "37",
+          "xMin": "3.6",
+          "yMin": "22"
+        },
+        {
+          "name": "Great Fire Wave",
+          "mana": "120",
+          "xMax": "5",
+          "yMax": "31",
+          "xMin": "3",
+          "yMin": "18"
+        },
+        {
+          "name": "Hell's Core",
+          "mana": "1100",
+          "xMax": "12",
+          "yMax": "150",
+          "xMin": "8",
+          "yMin": "75"
+        },
+        {
+          "name": "Ice Strike",
+          "mana": "20",
+          "xMax": "2.203",
+          "yMax": "14",
+          "xMin": "1.403",
+          "yMin": "8"
+        },
+        {
+          "name": "Rage of the Skies",
+          "mana": "600",
+          "xMax": "10",
+          "yMax": "150",
+          "xMin": "4",
+          "yMin": "75"
+        },
+        {
+          "name": "Strong Energy Strike",
+          "mana": "60",
+          "xMax": "4.4",
+          "yMax": "28",
+          "xMin": "2.8",
+          "yMin": "16"
+        },
+        {
+          "name": "Strong Flame Strike",
+          "mana": "60",
+          "xMax": "4.4",
+          "yMax": "28",
+          "xMin": "2.8",
+          "yMin": "16"
+        },
+        {
+          "name": "Terra Strike",
+          "mana": "20",
+          "xMax": "2.203",
+          "yMax": "14",
+          "xMin": "1.403",
+          "yMin": "8"
+        },
+        {
+          "name": "Ultimate Energy Strike",
+          "mana": "100",
+          "xMax": "7.3",
+          "yMax": "55",
+          "xMin": "4.5",
+          "yMin": "35"
+        },
+        {
+          "name": "Ultimate Flame Strike",
+          "mana": "100",
+          "xMax": "7.3",
+          "yMax": "55",
+          "xMin": "4.5",
+          "yMin": "35"
+        }
+      ],
+      "healing": [
+        {
+          "name": "Intense Healing",
+          "mana": "70",
+          "xMax": "6",
+          "yMax": "37",
+          "xMin": "3.6",
+          "yMin": "22"
+        },
+        {
+          "name": "Light Healing",
+          "mana": "20",
+          "xMax": "1.8",
+          "yMax": "11",
+          "xMin": "1.4",
+          "yMin": "8"
+        },
+        {
+          "name": "Ultimate Healing",
+          "mana": "160",
+          "xMax": "12.9",
+          "yMax": "90",
+          "xMin": "6.8",
+          "yMin": "42"
+        }
+      ]
+    },
+    "druid": {
+      "damage": [
+        {
+          "name": "Energy Strike",
+          "mana": "20",
+          "xMax": "2.203",
+          "yMax": "14",
+          "xMin": "1.403",
+          "yMin": "8"
+        },
+        {
+          "name": "Ethereal Winter",
+          "mana": "1050",
+          "xMax": "11",
+          "yMax": "50",
+          "xMin": "5.5",
+          "yMin": "25"
+        },
+        {
+          "name": "Flame Strike",
+          "mana": "20",
+          "xMax": "2.203",
+          "yMax": "14",
+          "xMin": "1.403",
+          "yMin": "8"
+        },
+        {
+          "name": "Ice Strike",
+          "mana": "20",
+          "xMax": "2.203",
+          "yMax": "14",
+          "xMin": "1.403",
+          "yMin": "8"
+        },
+        {
+          "name": "Ice Wave",
+          "mana": "25",
+          "xMax": "2",
+          "yMax": "12",
+          "xMin": "0.81",
+          "yMin": "5"
+        },
+        {
+          "name": "Physical Strike",
+          "mana": "20",
+          "xMax": "2.203",
+          "yMax": "14",
+          "xMin": "1.403",
+          "yMin": "8"
+        },
+        {
+          "name": "Strong Ice Strike",
+          "mana": "60",
+          "xMax": "4.4",
+          "yMax": "28",
+          "xMin": "2.8",
+          "yMin": "16"
+        },
+        {
+          "name": "Strong Ice Wave",
+          "mana": "170",
+          "xMax": "7.6",
+          "yMax": "48",
+          "xMin": "4.5",
+          "yMin": "20"
+        },
+        {
+          "name": "Strong Terra Strike",
+          "mana": "60",
+          "xMax": "4.4",
+          "yMax": "28",
+          "xMin": "2.8",
+          "yMin": "16"
+        },
+        {
+          "name": "Terra Strike",
+          "mana": "20",
+          "xMax": "2.203",
+          "yMax": "14",
+          "xMin": "1.403",
+          "yMin": "8"
+        },
+        {
+          "name": "Terra Wave",
+          "mana": "170",
+          "xMax": "6.75",
+          "yMax": "30",
+          "xMin": "3.25",
+          "yMin": "5"
+        },
+        {
+          "name": "Ultimate Ice Strike",
+          "mana": "100",
+          "xMax": "7.3",
+          "yMax": "55",
+          "xMin": "4.5",
+          "yMin": "35"
+        },
+        {
+          "name": "Ultimate Terra Strike",
+          "mana": "100",
+          "xMax": "7.3",
+          "yMax": "55",
+          "xMin": "4.5",
+          "yMin": "35"
+        },
+        {
+          "name": "Wrath of Nature",
+          "mana": "700",
+          "xMax": "9",
+          "yMax": "40",
+          "xMin": "3",
+          "yMin": "32"
+        }
+      ],
+      "healing": [
+        {
+          "name": "Heal Friend",
+          "mana": "120",
+          "xMax": "14.4",
+          "yMax": "90",
+          "xMin": "6.3",
+          "yMin": "45"
+        },
+        {
+          "name": "Intense Healing",
+          "mana": "70",
+          "xMax": "6",
+          "yMax": "37",
+          "xMin": "3.6",
+          "yMin": "22"
+        },
+        {
+          "name": "Light Healing",
+          "mana": "20",
+          "xMax": "1.8",
+          "yMax": "11",
+          "xMin": "1.4",
+          "yMin": "8"
+        },
+        {
+          "name": "Mass Healing",
+          "mana": "150",
+          "xMax": "9.6",
+          "yMax": "125",
+          "xMin": "4.6",
+          "yMin": "100"
+        },
+        {
+          "name": "Ultimate Healing",
+          "mana": "160",
+          "xMax": "12.9",
+          "yMax": "90",
+          "xMin": "6.8",
+          "yMin": "42"
+        }
+      ]
+    }
+  },
+  "unknown_values": {
+    "runes": {
+      "healing": [
+        {
+          "name": "Intense Healing Rune",
+          "price": "95"
+        }
+      ]
+    },
+    "vocations": {
+      "healing": [
+        {
+          "name": "Restoration",
+          "mana": "260"
+        },
+        {
+          "name": "Nature's Embrace",
+          "mana": "400"
+        },
+        {
+          "name": "Intense Wound Cleansing",
+          "mana": "200",
+          "spell": "exura gran ico"
+        }
+      ],
+      "damage": [
+        {
+          "name": "Lightning",
+          "mana": "60"
+        }
+      ]
+    }
+  },
+  "imbuements": [
+    {
+      "name": "Scorch",
+      "image": "Basic_Scorch",
+      "amount": 10,
+      "type": "physical converted to fire damage",
+      "materials": [
+        { "name": "Fiery Hearts", "amount": 25, "image": "Fiery_Heart" }
+      ]
+    },
+    {
+      "image": "Intricate_Scorch",
+      "amount": 25,
+      "type": "physical converted to fire damage",
+      "materials": [
+        { "name": "Fiery Hearts", "amount": 25, "image": "Fiery_Heart" },
+        {
+          "name": "Green Dragon Scales",
+          "amount": 5,
+          "image": "Green_Dragon_Scale"
+        }
+      ]
+    },
+    {
+      "image": "Powerful_Scorch",
+      "amount": 50,
+      "type": "physical converted to fire damage",
+      "materials": [
+        { "name": "Fiery Hearts", "amount": 25, "image": "Fiery_Heart" },
+        {
+          "name": "Green Dragon Scales",
+          "amount": 5,
+          "image": "Green_Dragon_Scale"
+        },
+        { "name": "Demon Horns", "amount": 5, "image": "Demon_Horn" }
+      ]
+    },
+    {
+      "name": "Venom",
+      "image": "Basic_Venom",
+      "amount": 10,
+      "type": "poison damage",
+      "materials": [
+        { "name": "Swamp Grass", "amount": 25, "image": "Swamp_Grass" }
+      ]
+    },
+    {
+      "image": "Intricate_Venom",
+      "amount": 25,
+      "type": "poison damage",
+      "materials": [
+        { "name": "Swamp Grass", "amount": 25, "image": "Swamp_Grass" },
+        {
+          "name": "Poisonous Slimes",
+          "amount": 20,
+          "image": "Poisonous_Slime"
+        }
+      ]
+    },
+    {
+      "image": "Powerful_Venom",
+      "amount": 50,
+      "type": "poison damage",
+      "materials": [
+        { "name": "Swamp Grass", "amount": 25, "image": "Swamp_Grass" },
+        {
+          "name": "Poisonous Slimes",
+          "amount": 20,
+          "image": "Poisonous_Slime"
+        },
+        { "name": "Slime Heart", "amount": 2, "image": "Slime_Heart" }
+      ]
+    },
+
+    {
+      "name": "Frost",
+      "image": "Basic_Frost",
+      "amount": 10,
+      "type": "ice damage",
+      "materials": [
+        { "name": "Frosty Hearts", "amount": 25, "image": "Frosty_Heart" }
+      ]
+    },
+    {
+      "image": "Intricate_Frost",
+      "amount": 25,
+      "type": "ice damage",
+      "materials": [
+        { "name": "Frosty Hearts", "amount": 25, "image": "Frosty_Heart" },
+        {
+          "name": "Seacrest Hair",
+          "amount": 10,
+          "image": "Seacrest_Hair"
+        }
+      ]
+    },
+    {
+      "image": "Powerful_Frost",
+      "amount": 50,
+      "type": "ice damage",
+      "materials": [
+        { "name": "Frosty Hearts", "amount": 25, "image": "Frosty_Heart" },
+        {
+          "name": "Seacrest Hair",
+          "amount": 10,
+          "image": "Seacrest_Hair"
+        },
+        { "name": "Polar Bear Paws", "amount": 5, "image": "Polar_Bear_Paw" }
+      ]
+    }
+  ]
+}
