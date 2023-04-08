@@ -56,24 +56,25 @@ export const calcBlessings = (level, blessing, type) => {
 
     if (type === "default") {
         if (level <= 30) {
-            price = (blessing * base);
+            return price = (blessing * base);
         }
         if (level <= 120) {
-            price = blessing * blessingCalc;
+            return price = blessing * blessingCalc;
         }
         if (level > 120) {
-            price = blessing * highBlessingCalc;
+            return price = blessing * highBlessingCalc;
         }
+        return price;
     } else if (type === "enhanced") {
         if (level <= 30) {
-            price = blessing * baseEnhanced;
+            return price = blessing * baseEnhanced;
         }
         if (level <= 120) {
-            price = blessing * enhancedBlessingCalc;
+            return price = blessing * enhancedBlessingCalc;
         }
         if (level > 120) {
-            price = blessing * enhancedHighBlessingCalc;
+            return price = blessing * enhancedHighBlessingCalc;
         }
+        return price;
     }
-    return price;
 }
