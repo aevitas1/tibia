@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import Home from "../pages/Home";
 import ErrorPage from "../pages/ErrorPage";
-import AddCharacter from "./characters/AddCharacter";
+import AddCharacter from "./new_character/AddCharacter";
 import CharacterStatsCalculator from "./character_stats_calculator/CharacterStatsCalculator";
 import Blessings from "./blessing_calculator/Blessings";
 import LevelSharing from "./level_sharing/LevelSharing";
