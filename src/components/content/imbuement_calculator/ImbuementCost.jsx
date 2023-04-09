@@ -8,7 +8,7 @@ import CompareCost from "./CompareCost";
 const ImbuementCost = ({ select }) => {
   const data = GetData();
   const string = select.level + select.name;
-  const mats = "Powerful_" + select.name;
+  // const mats = "Powerful_" + select.name;
   const [value, setValue] = useState([]);
   const found = data.data.data.imbuements.find(
     (element) => element.image === string
