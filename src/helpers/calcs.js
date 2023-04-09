@@ -78,7 +78,7 @@ export const calcBlessings = (level, blessing, type) => {
     }
 }
 
-export const calcImbuements = (value, goldValue, select, chance) => {
+export const calcImbuements = (value, select, chance) => {
     let price = 0;
     value.forEach((item) => {
         if (isNaN(item.value)) {

@@ -9,35 +9,34 @@ const ImbuementCost = ({ select }) => {
   const data = GetData();
   const string = select.level + select.name;
   const mats = "Powerful_" + select.name;
-  const [goldValue, setGoldValue] = useState();
   const [value, setValue] = useState([]);
   const found = data.data.data.imbuements.find(
     (element) => element.image === string
   );
-  const findMats = data.data.data.imbuements.find(
-    (element) => element.image === mats
-  );
+  // const findMats = data.data.data.imbuements.find(
+  //   (element) => element.image === mats
+  // );
 
-  const initialValue = () => {
-    findMats.materials.map((item) => {
-      setValue(
-        value.concat({
-          name: item.name,
-          amount: item.amount,
-        })
-      );
+  // const initialValue = () => {
+  //   findMats.materials.map((item) => {
+  //     setValue(
+  //       value.concat({
+  //         name: item.name,
+  //         amount: item.amount,
+  //       })
+  //     );
 
-      // setValue(
-      //   value
-      //     .filter((obj) => obj.name !== item.name)
-      //     .concat({
-      //       name: item.name,
-      //       amount: item.amount,
-      //     })
-      // );
-    });
-    console.log(value);
-  };
+  //     // setValue(
+  //     //   value
+  //     //     .filter((obj) => obj.name !== item.name)
+  //     //     .concat({
+  //     //       name: item.name,
+  //     //       amount: item.amount,
+  //     //     })
+  //     // );
+  //   });
+  //   console.log(value);
+  // };
   useEffect(() => {
     setValue([]);
   }, [select.name]);
@@ -126,12 +125,7 @@ const ImbuementCost = ({ select }) => {
           }}
         >
           <Typography variant="h5">Cost</Typography>
-          <CompareCost
-            goldValue={goldValue}
-            value={value}
-            found={found}
-            select={select}
-          />
+          <CompareCost value={value} found={found} select={select} />
         </Grid2>
       </>
     )
