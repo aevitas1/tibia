@@ -626,18 +626,148 @@
   },
   "imbuements": [
     {
+      "name": "Vampirism",
+      "image": "Basic_Vampirism",
+      "description": "5% life leech",
+      "materials": [
+        { "name": "Vampire Teeth", "amount": 25, "image": "Vampire_Teeth" },
+        { "name": "Gold Token", "amount": 2, "image": "Gold_Token" }
+      ]
+    },
+    {
+      "image": "Intricate_Vampirism",
+      "description": "10% life leech",
+      "materials": [
+        { "name": "Vampire Teeth", "amount": 25, "image": "Vampire_Teeth" },
+        {
+          "name": "Bloody Pincers",
+          "amount": 15,
+          "image": "Bloody_Pincers"
+        },
+        { "name": "Gold Token", "amount": 4, "image": "Gold_Token" }
+      ]
+    },
+    {
+      "image": "Powerful_Vampirism",
+      "description": "25% life leech",
+      "materials": [
+        { "name": "Vampire Teeth", "amount": 25, "image": "Vampire_Teeth" },
+        {
+          "name": "Bloody Pincers",
+          "amount": 15,
+          "image": "Bloody_Pincers"
+        },
+        {
+          "name": "Piece of Dead Brain",
+          "amount": 5,
+          "image": "Piece_of_Dead_Brain"
+        },
+        { "name": "Gold Token", "amount": 6, "image": "Gold_Token" }
+      ]
+    },
+    {
+      "name": "Void",
+      "image": "Basic_Void",
+      "description": "3% mana leech",
+      "materials": [
+        { "name": "Rope Belts", "amount": 25, "image": "Rope_Belt" },
+        { "name": "Gold Token", "amount": 2, "image": "Gold_Token" }
+      ]
+    },
+    {
+      "image": "Intricate_Void",
+      "description": "5% mana leech",
+      "materials": [
+        { "name": "Rope Belts", "amount": 25, "image": "Rope_Belt" },
+        {
+          "name": "Silencer Claws",
+          "amount": 25,
+          "image": "Silencer_Claws"
+        },
+        { "name": "Gold Token", "amount": 4, "image": "Gold_Token" }
+      ]
+    },
+    {
+      "image": "Powerful_Void",
+      "description": "8% mana leech",
+      "materials": [
+        { "name": "Rope Belts", "amount": 25, "image": "Rope_Belt" },
+        {
+          "name": "Silencer Claws",
+          "amount": 25,
+          "image": "Silencer_Claws"
+        },
+        {
+          "name": "Some Grimeleech Wings",
+          "amount": 5,
+          "image": "Some_Grimeleech_Wings"
+        },
+        { "name": "Gold Token", "amount": 6, "image": "Gold_Token" }
+      ]
+    },
+    {
+      "name": "Strike",
+      "image": "Basic_Strike",
+      "description": "10% chance to crit for 15% more damage",
+      "materials": [
+        {
+          "name": "Protective Charms",
+          "amount": 20,
+          "image": "Protective_Charm"
+        },
+        { "name": "Gold Token", "amount": 2, "image": "Gold_Token" }
+      ]
+    },
+    {
+      "image": "Intricate_Strike",
+      "description": "10% chance to crit for 25% more damage",
+      "materials": [
+        {
+          "name": "Protective Charms",
+          "amount": 20,
+          "image": "Protective_Charm"
+        },
+        {
+          "name": "Sabreteeth",
+          "amount": 25,
+          "image": "Sabretooth"
+        },
+        { "name": "Gold Token", "amount": 4, "image": "Gold_Token" }
+      ]
+    },
+    {
+      "image": "Powerful_Strike",
+      "description": "10% chance to crit for 50% more damage",
+      "materials": [
+        {
+          "name": "Protective Charms",
+          "amount": 20,
+          "image": "Protective_Charm"
+        },
+        {
+          "name": "Sabreteeth",
+          "amount": 25,
+          "image": "Sabretooth"
+        },
+        {
+          "name": "Vexclaw Talons",
+          "amount": 5,
+          "image": "Vexclaw_Talon"
+        },
+        { "name": "Gold Token", "amount": 6, "image": "Gold_Token" }
+      ]
+    },
+    {
       "name": "Scorch",
       "image": "Basic_Scorch",
-      "amount": 10,
-      "type": "physical converted to fire damage",
+      "description": "10% physical converted to fire damage",
       "materials": [
         { "name": "Fiery Hearts", "amount": 25, "image": "Fiery_Heart" }
       ]
     },
     {
       "image": "Intricate_Scorch",
-      "amount": 25,
-      "type": "physical converted to fire damage",
+      "description": "20% physical converted to fire damage",
       "materials": [
         { "name": "Fiery Hearts", "amount": 25, "image": "Fiery_Heart" },
         {
@@ -649,8 +779,7 @@
     },
     {
       "image": "Powerful_Scorch",
-      "amount": 50,
-      "type": "physical converted to fire damage",
+      "description": "50% physical converted to fire damage",
       "materials": [
         { "name": "Fiery Hearts", "amount": 25, "image": "Fiery_Heart" },
         {
@@ -664,16 +793,14 @@
     {
       "name": "Venom",
       "image": "Basic_Venom",
-      "amount": 10,
-      "type": "poison damage",
+      "description": "10% physical converted to poison damage",
       "materials": [
         { "name": "Swamp Grass", "amount": 25, "image": "Swamp_Grass" }
       ]
     },
     {
       "image": "Intricate_Venom",
-      "amount": 25,
-      "type": "poison damage",
+      "description": "25% physical converted to poison damage",
       "materials": [
         { "name": "Swamp Grass", "amount": 25, "image": "Swamp_Grass" },
         {
@@ -685,8 +812,7 @@
     },
     {
       "image": "Powerful_Venom",
-      "amount": 50,
-      "type": "poison damage",
+      "description": "50% physical converted to poison damage",
       "materials": [
         { "name": "Swamp Grass", "amount": 25, "image": "Swamp_Grass" },
         {
@@ -701,16 +827,14 @@
     {
       "name": "Frost",
       "image": "Basic_Frost",
-      "amount": 10,
-      "type": "ice damage",
+      "description": "10% physical converted to ice damage",
       "materials": [
         { "name": "Frosty Hearts", "amount": 25, "image": "Frosty_Heart" }
       ]
     },
     {
       "image": "Intricate_Frost",
-      "amount": 25,
-      "type": "ice damage",
+      "description": "25% physical converted to ice damage",
       "materials": [
         { "name": "Frosty Hearts", "amount": 25, "image": "Frosty_Heart" },
         {
@@ -722,8 +846,7 @@
     },
     {
       "image": "Powerful_Frost",
-      "amount": 50,
-      "type": "ice damage",
+      "description": "50% physical converted to ice damage",
       "materials": [
         { "name": "Frosty Hearts", "amount": 25, "image": "Frosty_Heart" },
         {
@@ -732,6 +855,775 @@
           "image": "Seacrest_Hair"
         },
         { "name": "Polar Bear Paws", "amount": 5, "image": "Polar_Bear_Paw" }
+      ]
+    },
+    {
+      "name": "Electrify",
+      "image": "Basic_Electrify",
+      "amount": 10,
+      "description": "10% physical converted to energy damage",
+      "materials": [
+        { "name": "Rorc Feathers", "amount": 25, "image": "Rorc_Feather" }
+      ]
+    },
+    {
+      "image": "Intricate_Electrify",
+      "description": "25% physical converted to energy damage",
+      "materials": [
+        { "name": "Rorc Feathers", "amount": 25, "image": "Rorc_Feather" },
+        {
+          "name": "Peacock Feather Fans",
+          "amount": 5,
+          "image": "Peacock_Feather_Fan"
+        }
+      ]
+    },
+    {
+      "image": "Powerful_Electrify",
+      "description": "50% physical converted to energy damage",
+      "materials": [
+        { "name": "Rorc Feathers", "amount": 25, "image": "Rorc_Feather" },
+        {
+          "name": "Peacock Feather Fans",
+          "amount": 5,
+          "image": "Peacock_Feather_Fan"
+        },
+        { "name": "Energy Vein", "amount": 1, "image": "Energy_Vein" }
+      ]
+    },
+    {
+      "name": "Reap",
+      "image": "Basic_Reap",
+      "description": "10% physical converted to death damage",
+      "materials": [
+        {
+          "name": "Piles of Grave Earth",
+          "amount": 25,
+          "image": "Pile_of_Grave_Earth"
+        }
+      ]
+    },
+    {
+      "image": "Intricate_Reap",
+      "description": "25% physical converted to death damage",
+      "materials": [
+        {
+          "name": "Piles of Grave Earth",
+          "amount": 25,
+          "image": "Pile_of_Grave_Earth"
+        },
+        {
+          "name": "Demonic Skeletal Hands",
+          "amount": 20,
+          "image": "Demonic_Skeletal_Hand"
+        }
+      ]
+    },
+    {
+      "image": "Powerful_Reap",
+      "description": "50% physical converted to death damage",
+      "materials": [
+        {
+          "name": "Piles of Grave Earth",
+          "amount": 25,
+          "image": "Pile_of_Grave_Earth"
+        },
+        {
+          "name": "Demonic Skeletal Hands",
+          "amount": 20,
+          "image": "Demonic_Skeletal_Hand"
+        },
+        {
+          "name": "Petrified Screams",
+          "amount": 5,
+          "image": "Petrified_Scream"
+        }
+      ]
+    },
+    {
+      "name": "Lich_Shroud",
+      "image": "Basic_Lich_Shroud",
+      "description": "2% death protection",
+      "materials": [
+        {
+          "name": "Flasks of Embalming Fluid",
+          "amount": 25,
+          "image": "Flask_of_Embalming_Fluid"
+        }
+      ]
+    },
+    {
+      "image": "Intricate_Lich_Shroud",
+      "description": "5% death protection",
+      "materials": [
+        {
+          "name": "Flasks of Embalming Fluid",
+          "amount": 25,
+          "image": "Flask_of_Embalming_Fluid"
+        },
+        {
+          "name": "Gloom Wolf Furs",
+          "amount": 20,
+          "image": "Gloom_Wolf_Fur"
+        }
+      ]
+    },
+    {
+      "image": "Powerful_Lich_Shroud",
+      "description": "10% death protection",
+      "materials": [
+        {
+          "name": "Flasks of Embalming Fluid",
+          "amount": 25,
+          "image": "Flask_of_Embalming_Fluid"
+        },
+        {
+          "name": "Gloom Wolf Furs",
+          "amount": 20,
+          "image": "Gloom_Wolf_Fur"
+        },
+        {
+          "name": "Mystical Hourglasses",
+          "amount": 5,
+          "image": "Mystical_Hourglass"
+        }
+      ]
+    },
+    {
+      "name": "Snake_Skin",
+      "image": "Basic_Snake_Skin",
+      "description": "3% earth protection",
+      "materials": [
+        {
+          "name": "Pieces of Swampling Wood",
+          "amount": 25,
+          "image": "Piece_of_Swampling_Wood"
+        }
+      ]
+    },
+    {
+      "image": "Intricate_Snake_Skin",
+      "description": "8% earth protection",
+      "materials": [
+        {
+          "name": "Pieces of Swampling Wood",
+          "amount": 25,
+          "image": "Piece_of_Swampling_Wood"
+        },
+        {
+          "name": "Snake Skins",
+          "amount": 20,
+          "image": "Snake_Skin"
+        }
+      ]
+    },
+    {
+      "image": "Powerful_Snake_Skin",
+      "description": "15% earth protection",
+      "materials": [
+        {
+          "name": "Pieces of Swampling Wood",
+          "amount": 25,
+          "image": "Piece_of_Swampling_Wood"
+        },
+        {
+          "name": "Snake Skins",
+          "amount": 20,
+          "image": "Snake_Skin"
+        },
+        {
+          "name": "Brimstone Fangs",
+          "amount": 10,
+          "image": "Brimstone_Fangs"
+        }
+      ]
+    },
+    {
+      "name": "Dragon_Hide",
+      "image": "Basic_Dragon_Hide",
+      "description": "3% fire protection",
+      "materials": [
+        {
+          "name": "Green Dragon Leathers",
+          "amount": 20,
+          "image": "Green_Dragon_Leather"
+        }
+      ]
+    },
+    {
+      "image": "Intricate_Dragon_Hide",
+      "description": "8% fire protection",
+      "materials": [
+        {
+          "name": "Green Dragon Leathers",
+          "amount": 20,
+          "image": "Green_Dragon_Leather"
+        },
+        {
+          "name": "Blazing Bones",
+          "amount": 10,
+          "image": "Blazing_Bone"
+        }
+      ]
+    },
+    {
+      "image": "Powerful_Dragon_Hide",
+      "description": "15% fire protection",
+      "materials": [
+        {
+          "name": "Green Dragon Leathers",
+          "amount": 20,
+          "image": "Green_Dragon_Leather"
+        },
+        {
+          "name": "Blazing Bones",
+          "amount": 10,
+          "image": "Blazing_Bone"
+        },
+        {
+          "name": "Draken Sulphur",
+          "amount": 5,
+          "image": "Draken_Sulphur"
+        }
+      ]
+    },
+    {
+      "name": "Quara_Scale",
+      "image": "Basic_Quara_Scale",
+      "description": "3% ice protection",
+      "materials": [
+        {
+          "name": "Winter Wolf Furs",
+          "amount": 25,
+          "image": "Winter_Wolf_Fur"
+        }
+      ]
+    },
+    {
+      "image": "Intricate_Quara_Scale",
+      "description": "8% ice protection",
+      "materials": [
+        {
+          "name": "Winter Wolf Furs",
+          "amount": 25,
+          "image": "Winter_Wolf_Fur"
+        },
+        {
+          "name": "Thick Furs",
+          "amount": 15,
+          "image": "Thick_Fur"
+        }
+      ]
+    },
+    {
+      "image": "Powerful_Quara_Scale",
+      "description": "15% ice protection",
+      "materials": [
+        {
+          "name": "Winter Wolf Furs",
+          "amount": 25,
+          "image": "Winter_Wolf_Fur"
+        },
+        {
+          "name": "Thick Furs",
+          "amount": 15,
+          "image": "Thick_Fur"
+        },
+        {
+          "name": "Deepling Warts",
+          "amount": 10,
+          "image": "Deepling_Warts"
+        }
+      ]
+    },
+    {
+      "name": "Cloud_Fabric",
+      "image": "Basic_Cloud_Fabric",
+      "description": "3% energy protection",
+      "materials": [
+        {
+          "name": "Wyvern Talismans",
+          "amount": 20,
+          "image": "Wyvern_Talisman"
+        }
+      ]
+    },
+    {
+      "image": "Intricate_Cloud_Fabric",
+      "description": "8% energy protection",
+      "materials": [
+        {
+          "name": "Wyvern Talismans",
+          "amount": 20,
+          "image": "Wyvern_Talisman"
+        },
+        {
+          "name": "Crawler Head Platings",
+          "amount": 15,
+          "image": "Crawler_Head_Plating"
+        }
+      ]
+    },
+    {
+      "image": "Powerful_Cloud_Fabric",
+      "description": "15% energy protection",
+      "materials": [
+        {
+          "name": "Wyvern Talismans",
+          "amount": 20,
+          "image": "Wyvern_Talisman"
+        },
+        {
+          "name": "Crawler Head Platings",
+          "amount": 15,
+          "image": "Crawler_Head_Plating"
+        },
+        {
+          "name": "Wyrm Scales",
+          "amount": 10,
+          "image": "Wyrm_Scale"
+        }
+      ]
+    },
+    {
+      "name": "Demon_Presence",
+      "image": "Basic_Demon_Presence",
+      "description": "3% holy protection",
+      "materials": [
+        {
+          "name": "Cultish Robes",
+          "amount": 25,
+          "image": "Cultish_Robe"
+        }
+      ]
+    },
+    {
+      "image": "Intricate_Demon_Presence",
+      "description": "8% holy protection",
+      "materials": [
+        {
+          "name": "Cultish Robes",
+          "amount": 25,
+          "image": "Cultish_Robe"
+        },
+        {
+          "name": "Cultish Masks",
+          "amount": 25,
+          "image": "Cultish_Mask"
+        }
+      ]
+    },
+    {
+      "image": "Powerful_Demon_Presence",
+      "description": "15% holy protection",
+      "materials": [
+        {
+          "name": "Cultish Robes",
+          "amount": 25,
+          "image": "Cultish_Robe"
+        },
+        {
+          "name": "Cultish Masks",
+          "amount": 25,
+          "image": "Cultish_Mask"
+        },
+        {
+          "name": "Hellspawn Tails",
+          "amount": 20,
+          "image": "Hellspawn_Tail"
+        }
+      ]
+    },
+    {
+      "name": "Vibrancy",
+      "image": "Basic_Vibrancy",
+      "description": "15% chance to remove paralysis (100% in PvP)",
+      "materials": [
+        {
+          "name": "Wereboar Hooves",
+          "amount": 20,
+          "image": "Wereboar_Hooves"
+        }
+      ]
+    },
+    {
+      "image": "Intricate_Vibrancy",
+      "description": "25% chance to remove paralysis (100% in PvP)",
+      "materials": [
+        {
+          "name": "Wereboar Hooves",
+          "amount": 20,
+          "image": "Wereboar_Hooves"
+        },
+        {
+          "name": "Crystallized Anger",
+          "amount": 15,
+          "image": "Crystallized_Anger"
+        }
+      ]
+    },
+    {
+      "image": "Powerful_Vibrancy",
+      "description": "50% chance to remove paralysis (100% in PvP)",
+      "materials": [
+        {
+          "name": "Wereboar Hooves",
+          "amount": 20,
+          "image": "Wereboar_Hooves"
+        },
+        {
+          "name": "Crystallized Anger",
+          "amount": 15,
+          "image": "Crystallized_Anger"
+        },
+        {
+          "name": "Quills",
+          "amount": 5,
+          "image": "Quill"
+        }
+      ]
+    },
+    {
+      "name": "Swiftness",
+      "image": "Basic_Swiftness",
+      "description": "10% movement speed increase",
+      "materials": [
+        {
+          "name": "Damselfly Wings",
+          "amount": 15,
+          "image": "Damselfly_Wing"
+        }
+      ]
+    },
+    {
+      "image": "Intricate_Swiftness",
+      "description": "15% movement speed increase",
+      "materials": [
+        {
+          "name": "Damselfly Wings",
+          "amount": 15,
+          "image": "Damselfly_Wing"
+        },
+        {
+          "name": "Compasses",
+          "amount": 25,
+          "image": "Compass"
+        }
+      ]
+    },
+    {
+      "image": "Powerful_Swiftness",
+      "description": "30% movement speed increase",
+      "materials": [
+        {
+          "name": "Damselfly Wings",
+          "amount": 15,
+          "image": "Damselfly_Wing"
+        },
+        {
+          "name": "Compasses",
+          "amount": 25,
+          "image": "Compass"
+        },
+        {
+          "name": "Waspoid Wings",
+          "amount": 20,
+          "image": "Waspoid_Wing"
+        }
+      ]
+    },
+    {
+      "name": "Chop",
+      "image": "Basic_Chop",
+      "description": "1 increased axe fighting skill",
+      "materials": [
+        {
+          "name": "Orc Teeth",
+          "amount": 20,
+          "image": "Orc_Tooth"
+        }
+      ]
+    },
+    {
+      "image": "Intricate_Chop",
+      "description": "2 increased axe fighting skill",
+      "materials": [
+        {
+          "name": "Orc Teeth",
+          "amount": 20,
+          "image": "Orc_Tooth"
+        },
+        {
+          "name": "Battle Stones",
+          "amount": 25,
+          "image": "Battle_Stone"
+        }
+      ]
+    },
+    {
+      "image": "Powerful_Chop",
+      "description": "4 increased axe fighting skill",
+      "materials": [
+        {
+          "name": "Orc Teeth",
+          "amount": 20,
+          "image": "Orc_Tooth"
+        },
+        {
+          "name": "Battle Stones",
+          "amount": 25,
+          "image": "Battle_Stone"
+        },
+        {
+          "name": "Moohtant Horns",
+          "amount": 20,
+          "image": "Moohtant_Horn"
+        }
+      ]
+    },
+    {
+      "name": "Slash",
+      "image": "Basic_Slash",
+      "description": "1 increased sword fighting skill",
+      "materials": [
+        {
+          "name": "Lion's Manes",
+          "amount": 25,
+          "image": "Lions_Mane"
+        }
+      ]
+    },
+    {
+      "image": "Intricate_Slash",
+      "description": "2 increased sword fighting skill",
+      "materials": [
+        {
+          "name": "Lion's Manes",
+          "amount": 25,
+          "image": "Lions_Mane"
+        },
+        {
+          "name": "Mooh'tah Shells",
+          "amount": 25,
+          "image": "Moohtah_Shell"
+        }
+      ]
+    },
+    {
+      "image": "Powerful_Slash",
+      "description": "4 increased sword fighting skill",
+      "materials": [
+        {
+          "name": "Lion's Manes",
+          "amount": 25,
+          "image": "Lions_Mane"
+        },
+        {
+          "name": "Mooh'tah Shells",
+          "amount": 25,
+          "image": "Moohtah_Shell"
+        },
+        {
+          "name": "War Crystals",
+          "amount": 5,
+          "image": "War_Crystal"
+        }
+      ]
+    },
+    {
+      "name": "Bash",
+      "image": "Basic_Bash",
+      "description": "1 increased club fighting skill",
+      "materials": [
+        {
+          "name": "Cyclops Toes",
+          "amount": 20,
+          "image": "Cyclops_Toe"
+        }
+      ]
+    },
+    {
+      "image": "Intricate_Bash",
+      "description": "2 increased club fighting skill",
+      "materials": [
+        {
+          "name": "Cyclops Toes",
+          "amount": 20,
+          "image": "Cyclops_Toe"
+        },
+        {
+          "name": "Ogre Nose Rings",
+          "amount": 15,
+          "image": "Ogre_Nose_Ring"
+        }
+      ]
+    },
+    {
+      "image": "Powerful_Bash",
+      "description": "4 increased club fighting skill",
+      "materials": [
+        {
+          "name": "Cyclops Toes",
+          "amount": 20,
+          "image": "Cyclops_Toe"
+        },
+        {
+          "name": "Ogre Nose Rings",
+          "amount": 15,
+          "image": "Ogre_Nose_Ring"
+        },
+        {
+          "name": "Warmaster's Wristguards",
+          "amount": 10,
+          "image": "Warmasters_Wristguards"
+        }
+      ]
+    },
+    {
+      "name": "Precision",
+      "image": "Basic_Precision",
+      "description": "1 increased distance fighting skill",
+      "materials": [
+        {
+          "name": "Elven Scouting Glasses",
+          "amount": 25,
+          "image": "Elven_Scouting_Glass"
+        }
+      ]
+    },
+    {
+      "image": "Intricate_Precision",
+      "description": "2 increased distance fighting skill",
+      "materials": [
+        {
+          "name": "Elven Scouting Glasses",
+          "amount": 25,
+          "image": "Elven_Scouting_Glass"
+        },
+        {
+          "name": "Elven Hoofs",
+          "amount": 20,
+          "image": "Elven_Hoof"
+        }
+      ]
+    },
+    {
+      "image": "Powerful_Precision",
+      "description": "4 increased distance fighting skill",
+      "materials": [
+        {
+          "name": "Elven Scouting Glasses",
+          "amount": 25,
+          "image": "Elven_Scouting_Glass"
+        },
+        {
+          "name": "Elven Hoofs",
+          "amount": 20,
+          "image": "Elven_Hoof"
+        },
+        {
+          "name": "Metal Spikes",
+          "amount": 10,
+          "image": "Metal_Spike"
+        }
+      ]
+    },
+    {
+      "name": "Blockade",
+      "image": "Basic_Blockade",
+      "description": "1 increased shielding skill",
+      "materials": [
+        {
+          "name": "Pieces of Scarab Shell",
+          "amount": 20,
+          "image": "Piece_of_Scarab_Shell"
+        }
+      ]
+    },
+    {
+      "image": "Intricate_Blockade",
+      "description": "2 increased shielding skill",
+      "materials": [
+        {
+          "name": "Pieces of Scarab Shell",
+          "amount": 20,
+          "image": "Piece_of_Scarab_Shell"
+        },
+        {
+          "name": "Brimstone Shells",
+          "amount": 25,
+          "image": "Brimstone_Shell"
+        }
+      ]
+    },
+    {
+      "image": "Powerful_Blockade",
+      "description": "4 increased shielding skill",
+      "materials": [
+        {
+          "name": "Pieces of Scarab Shell",
+          "amount": 20,
+          "image": "Piece_of_Scarab_Shell"
+        },
+        {
+          "name": "Brimstone Shells",
+          "amount": 25,
+          "image": "Brimstone_Shell"
+        },
+        {
+          "name": "Frazzle Skins",
+          "amount": 25,
+          "image": "Frazzle_Skin"
+        }
+      ]
+    },
+    {
+      "name": "Epiphany",
+      "image": "Basic_Epiphany",
+      "description": "1 increased magic level",
+      "materials": [
+        {
+          "name": "Elvish Talismans",
+          "amount": 25,
+          "image": "Elvish_Talisman"
+        }
+      ]
+    },
+    {
+      "image": "Intricate_Epiphany",
+      "description": "2 increased magic level",
+      "materials": [
+        {
+          "name": "Elvish Talismans",
+          "amount": 25,
+          "image": "Elvish_Talisman"
+        },
+        {
+          "name": "Broken Shamanic Staffs",
+          "amount": 15,
+          "image": "Broken_Shamanic_Staff"
+        }
+      ]
+    },
+    {
+      "image": "Powerful_Epiphany",
+      "description": "4 increased magic level",
+      "materials": [
+        {
+          "name": "Elvish Talismans",
+          "amount": 25,
+          "image": "Elvish_Talisman"
+        },
+        {
+          "name": "Broken Shamanic Staffs",
+          "amount": 15,
+          "image": "Broken_Shamanic_Staff"
+        },
+        {
+          "name": "Strands of Medusa Hair",
+          "amount": 15,
+          "image": "Strand_of_Medusa_Hair"
+        }
       ]
     }
   ]
