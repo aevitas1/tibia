@@ -36,7 +36,6 @@ export const calcExperienceLoss = (level, blessing, promoted) => {
         }
         percent = parseFloat(percent) + blessingPercent;
         percent = 1 - parseFloat(percent);
-        console.log(percent)
         expLoss = expCalc * percent;
     }
     if (level <= 0) {
@@ -77,4 +76,27 @@ export const calcBlessings = (level, blessing, type) => {
         }
         return price;
     }
+}
+
+export const calcImbuements = (value, goldValue, select, chance) => {
+    let price = 0;
+    value.forEach((item) => {
+        if (isNaN(item.value)) {
+            return
+        }
+        let val = item.value * item.amount;
+        price = price + val;
+        return price;
+    })
+    let basePrice;
+    switch (select.level) {
+        case "Basic_": basePrice = chance ? 15000 : 5000
+            ; break;
+        case "Intricate_": basePrice = chance ? 55000 : 25000
+            ; break;
+        case "Powerful_": basePrice = chance ? 150000 : 100000
+            ; break;
+        default: basePrice = 0;
+    }
+    return basePrice + price;
 }

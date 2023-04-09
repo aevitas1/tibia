@@ -18,7 +18,7 @@ import { SelectMenuStyles, SelectStyles } from "../../../theme/SelectStyle";
 const ImbuementCalculator = () => {
   const data = GetData();
   const [select, setSelect] = useState({
-    name: "Scorch",
+    name: "Vampirism",
     level: "Basic_",
   });
 
@@ -34,6 +34,11 @@ const ImbuementCalculator = () => {
       ...prevState,
       level: e.target.value,
     }));
+  };
+
+  const fixString = (string) => {
+    let fix = string.replace(/_/g, " ");
+    return fix;
   };
 
   return data.status === "loading" ? (
@@ -91,7 +96,7 @@ const ImbuementCalculator = () => {
               (item) =>
                 item.name && (
                   <MenuItem value={item.name} key={item.name}>
-                    {item.name}
+                    {fixString(item.name)}
                   </MenuItem>
                 )
             )}

@@ -10,13 +10,13 @@ const TextField = {
             '.MuiInputBase-root': {
                 borderRadius: '0',
                 fontSize: '1rem',
-                color: "#fff",
+                color: "#fafafa",
                 '.MuiOutlinedInput-notchedOutline': {
-                    border: "1px solid rgba(255, 255, 255, 0.85)",
+                    border: "1px solid rgb(190, 190, 190)",
                 },
             },
             '.MuiFormLabel-root.MuiInputLabel-root': {
-                color: 'rgba(255, 255, 255, 0.85)',
+                color: 'rgb(190, 190, 190)',
             },
         },
     }

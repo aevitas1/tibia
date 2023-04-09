@@ -4,6 +4,7 @@ import typography from "./typography";
 import MuiTextField from './MuiTextField'
 import MuiTableCell from './TableStyle'
 import MuiCheckbox from "./MuiCheckbox";
+import MuiDivider from "./MuiDivider";
 
 export const Theme = createTheme({
     palette,
@@ -11,6 +12,7 @@ export const Theme = createTheme({
     components: {
         MuiTextField,
         MuiTableCell,
-        MuiCheckbox
+        MuiCheckbox,
+        MuiDivider
     },
 });

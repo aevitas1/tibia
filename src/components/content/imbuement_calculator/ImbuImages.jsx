@@ -3,6 +3,7 @@ import Basic_Blockade from "../../../assets/imbuements/Basic_Blockade.png";
 import Basic_Chop from "../../../assets/imbuements/Basic_Chop.png";
 import Basic_Cloud_Fabric from "../../../assets/imbuements/Basic_Cloud_Fabric.png";
 import Basic_Demon_Presence from "../../../assets/imbuements/Basic_Demon_Presence.png";
+import Basic_Dragon_Hide from "../../../assets/imbuements/Basic_Dragon_Hide.png";
 import Basic_Electrify from "../../../assets/imbuements/Basic_Electrify.png";
 import Basic_Epiphany from "../../../assets/imbuements/Basic_Epiphany.png";
 import Basic_Featherweight from "../../../assets/imbuements/Basic_Featherweight.png";
@@ -25,6 +26,7 @@ import Intricate_Blockade from "../../../assets/imbuements/Intricate_Blockade.pn
 import Intricate_Chop from "../../../assets/imbuements/Intricate_Chop.png";
 import Intricate_Cloud_Fabric from "../../../assets/imbuements/Intricate_Cloud_Fabric.png";
 import Intricate_Demon_Presence from "../../../assets/imbuements/Intricate_Demon_Presence.png";
+import Intricate_Dragon_Hide from "../../../assets/imbuements/Intricate_Dragon_Hide.png";
 import Intricate_Electrify from "../../../assets/imbuements/Intricate_Electrify.png";
 import Intricate_Epiphany from "../../../assets/imbuements/Intricate_Epiphany.png";
 import Intricate_Featherweight from "../../../assets/imbuements/Intricate_Featherweight.png";
@@ -47,6 +49,7 @@ import Powerful_Blockade from "../../../assets/imbuements/Powerful_Blockade.png"
 import Powerful_Chop from "../../../assets/imbuements/Powerful_Chop.png";
 import Powerful_Cloud_Fabric from "../../../assets/imbuements/Powerful_Cloud_Fabric.png";
 import Powerful_Demon_Presence from "../../../assets/imbuements/Powerful_Demon_Presence.png";
+import Powerful_Dragon_Hide from "../../../assets/imbuements/Powerful_Dragon_Hide.png";
 import Powerful_Electrify from "../../../assets/imbuements/Powerful_Electrify.png";
 import Powerful_Epiphany from "../../../assets/imbuements/Powerful_Epiphany.png";
 import Powerful_Featherweight from "../../../assets/imbuements/Powerful_Featherweight.png";
@@ -72,6 +75,7 @@ const imbuImages = {
   Basic_Chop,
   Basic_Cloud_Fabric,
   Basic_Demon_Presence,
+  Basic_Dragon_Hide,
   Basic_Electrify,
   Basic_Epiphany,
   Basic_Featherweight,
@@ -94,6 +98,7 @@ const imbuImages = {
   Intricate_Chop,
   Intricate_Cloud_Fabric,
   Intricate_Demon_Presence,
+  Intricate_Dragon_Hide,
   Intricate_Electrify,
   Intricate_Epiphany,
   Intricate_Featherweight,
@@ -116,6 +121,7 @@ const imbuImages = {
   Powerful_Chop,
   Powerful_Cloud_Fabric,
   Powerful_Demon_Presence,
+  Powerful_Dragon_Hide,
   Powerful_Electrify,
   Powerful_Epiphany,
   Powerful_Featherweight,
